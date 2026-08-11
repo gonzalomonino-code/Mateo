@@ -335,24 +335,10 @@
     .team-card:hover .team-avatar { transform:none; }
   }
 
-  /* ---------- MOBILE & PORTRAIT TABLET: show full photos, no crop ---------- */
+  /* ---------- MOBILE & PORTRAIT TABLET ---------- */
   @media (max-width:860px) {
     /* HERO → same full-bleed video layout as desktop, just resized */
     .hero-inner { max-width:none; }
-
-    /* SOBRE NOSOTROS → full team photo as a banner, content below on grayish-blue */
-    #nosotros { display:block; background:#212d40; }
-    #nosotros:before { content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
-                       background:#465f8a; opacity:.16;
-                       -webkit-mask:url('images/m-pattern.png') repeat; mask:url('images/m-pattern.png') repeat;
-                       -webkit-mask-size:300px auto; mask-size:300px auto; }
-    .nosotros-bg { position:relative; inset:auto; width:100%; height:auto; margin-bottom:2.2rem;
-                   border-radius:12px; overflow:hidden; border:1px solid #ffffff26;
-                   box-shadow:0 14px 34px #00000073; }
-    .nosotros-bg:after { display:none; }
-    .nosotros-bg img { position:relative; width:100%; height:auto; object-fit:contain; }
-    .nosotros-left .section-title { text-shadow:none; }
-    .nosotros-lead, .about-quote p { text-shadow:none; }
   }
 </style>
 </head>
