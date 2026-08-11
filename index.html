@@ -337,26 +337,8 @@
 
   /* ---------- MOBILE & PORTRAIT TABLET: show full photos, no crop ---------- */
   @media (max-width:860px) {
-    /* HERO → stacked: whole rally car on top, headline on grayish-blue below */
-    .hero { height:auto; min-height:0; padding:64px 0 0; display:flex; flex-direction:column;
-            background:#212d40; overflow:visible; }
-    .hero-bg { position:relative; inset:auto; width:100%; height:auto; overflow:hidden;
-               border-bottom:3px solid var(--orange); }
-    .hero-bg:before { display:none; }
-    .hero-video { position:relative; inset:auto; width:100%; height:auto; object-fit:contain;
-                  opacity:1; }
-    .hero-grid, .hero-glow, .hero-overlay { display:none; }
-    .hero-content { position:relative; flex:none; align-items:flex-start;
-                    padding:2.6rem 1.5rem 2.8rem; overflow:hidden; }
-    /* faint "M" logo watermark over the grayish-blue panel */
-    .hero-content:before { content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
-                           background:#465f8a; opacity:.16;
-                           -webkit-mask:url('images/m-pattern.png') repeat; mask:url('images/m-pattern.png') repeat;
-                           -webkit-mask-size:300px auto; mask-size:300px auto; }
-    .hero-inner { position:relative; z-index:1; }
+    /* HERO → same full-bleed video layout as desktop, just resized */
     .hero-inner { max-width:none; }
-    .hero-heading { margin-bottom:1.1rem; }
-    .hero-subtitle { max-width:none; }
 
     /* SOBRE NOSOTROS → full team photo as a banner, content below on grayish-blue */
     #nosotros { display:block; background:#212d40; }
