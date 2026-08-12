@@ -122,6 +122,13 @@
     .lg-foot-links { align-items:flex-start; }
     .lg-disclaimer { padding:0 1.1rem; }
   }
+
+  /* ---------- MOBILE FIX: allow grid items to shrink so the cookies
+     table's own horizontal scroll (.lg-table-wrap) stays contained
+     instead of forcing the whole page width ---------- */
+  @media (max-width:860px) {
+    main, .lg-doc { min-width:0; }
+  }
 </style>
 </head>
 <body>
