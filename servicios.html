@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Servicios — Talleres Mateo 2.0</title>
+<meta name="description" content="Catálogo completo de servicios de Talleres Mateo 2.0: mecánica rápida, mantenimiento, frenos, embragues, electricidad, diagnosis, neumáticos y más." />
 <link href="https://fonts.googleapis.com" rel="preconnect" />
 <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Barlow:wght@300;400;500;600&family=Satisfy&display=swap" rel="stylesheet" />
@@ -129,26 +130,12 @@
   .svc-item:hover .svc-thumb:after { background:linear-gradient(180deg, #00000026 0%, #00000066 55%, #0a2463e0 100%), linear-gradient(90deg, #0a2463b3 0%, transparent 60%); }
   .svc-num { position:absolute; top:.7rem; left:.7rem; z-index:2; font-family:'Bebas Neue',sans-serif; font-size:1.05rem; letter-spacing:1px; color:#fff; background:#000000a6; backdrop-filter:blur(4px); padding:.12rem .55rem; border-radius:2px; border-left:2px solid var(--orange); }
 
-  /* Branded placeholder thumb for services without a photo */
-  .svc-thumb.is-mono { display:flex; align-items:center; justify-content:center; background:radial-gradient(130% 130% at 50% -10%, #234387 0%, #0a2463 62%); }
-  .svc-thumb.is-mono:before { content:""; position:absolute; inset:0; background:#fff; opacity:.06; -webkit-mask:url('assets/m-pattern.png') repeat; mask:url('assets/m-pattern.png') repeat; -webkit-mask-size:190px auto; mask-size:190px auto; }
-  .svc-thumb.is-mono .mono-mark { position:relative; z-index:1; color:#fff; opacity:.9; display:flex; }
-  .svc-thumb.is-mono .mono-mark svg { width:40px; height:40px; }
-
   .svc-body { padding:1.05rem 1.25rem 1.3rem; display:flex; flex-direction:column; gap:.5rem; flex:1; }
   .svc-head { display:flex; align-items:center; justify-content:space-between; gap:.6rem; }
   .svc-name { color:var(--blue); font-family:'Bebas Neue',sans-serif; font-size:1.32rem; line-height:1.05; letter-spacing:1px; }
   .svc-name .accent { color:var(--orange); }
   .svc-tag { color:var(--orange); font-family:'Barlow Condensed',sans-serif; font-size:10px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; flex-shrink:0; background:#f2430010; padding:.28rem .5rem; border-radius:2px; white-space:nowrap; }
   .svc-desc { color:#5a6178; font-family:Barlow,sans-serif; font-size:.86rem; line-height:1.55; font-weight:400; }
-
-  /* ============ FILL PROMPT ============ */
-  .fill-prompt { background:#fff; border:1px dashed #f2430059; border-radius:6px; padding:1.75rem 2rem; display:flex; align-items:center; gap:1.25rem; margin-top:2.5rem; }
-  .fill-prompt-icon { width:48px; height:48px; flex-shrink:0; background:#f2430014; border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--orange); }
-  .fill-prompt-icon svg { width:24px; height:24px; }
-  .fill-prompt-text { flex:1; min-width:0; }
-  .fill-prompt-title { color:var(--blue); font-family:'Bebas Neue',sans-serif; font-size:1.15rem; letter-spacing:1.5px; margin-bottom:.2rem; }
-  .fill-prompt-desc { color:#5a6178; font-family:Barlow,sans-serif; font-size:.9rem; line-height:1.55; }
 
   /* ============ CTA ============ */
   #contacto { background:var(--orange); text-align:center; padding:6rem 3rem; position:relative; overflow:hidden; }
@@ -650,15 +637,6 @@
 </script>
 
 <script src="cookie-consent.js"></script>
-
-<template id="__bundler_thumbnail" data-bg-color="#0a2463">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#0a2463"/>
-    <text x="600" y="430" font-family="Arial, sans-serif" font-weight="900" font-size="300" fill="#ffffff" text-anchor="middle">M</text>
-    <rect x="430" y="500" width="340" height="14" fill="#f24300"/>
-    <text x="600" y="600" font-family="Arial, sans-serif" font-weight="700" font-size="56" letter-spacing="8" fill="#ffffffcc" text-anchor="middle">SERVICIOS</text>
-  </svg>
-</template>
 
 <!-- Botón flotante WhatsApp PRO -->
 <a href="https://wa.me/34699911407" target="_blank" rel="noopener" id="wa-fab" aria-label="Escríbenos por WhatsApp">

@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Talleres Mateo 2.0 — Mecánica & Electricidad</title>
+<meta name="description" content="Taller de mecánica y electricidad del automóvil en Sangonera la Seca, Murcia. Diagnosis, reparación de vehículos diésel, gasolina, híbridos y eléctricos." />
 <link href="https://fonts.googleapis.com" rel="preconnect" />
 <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,900;1,700&family=Barlow:wght@300;400;500;600&family=Satisfy&family=Lobster&display=swap" rel="stylesheet" />
@@ -40,11 +41,6 @@
   .nav-logo-img { height:50px; width:auto; display:block; filter:drop-shadow(0 4px 16px #00000080); transition:height .25s; }
   nav.scrolled .nav-logo-img { height:42px; }
   .footer-brand .nav-logo-img { height:70px; filter:none; }
-  .nav-logo-badge { clip-path:polygon(8% 0%, 92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%); background:var(--orange); letter-spacing:1px; width:42px; height:34px; color:var(--white); text-align:center; flex-shrink:0; justify-content:center; align-items:center; font-family:'Bebas Neue',sans-serif; font-size:11px; line-height:1.1; display:flex; }
-  .nav-brand-text { flex-direction:column; line-height:1; display:flex; }
-  .nav-brand-top { letter-spacing:3px; color:var(--orange); text-transform:uppercase; font-family:'Barlow Condensed',sans-serif; font-size:10px; font-weight:600; }
-  .nav-brand-main { color:var(--white); font-family:'Satisfy',cursive; font-size:20px; }
-  .nav-brand-main span { color:var(--orange); }
   .nav-links { gap:2.2rem; list-style:none; display:flex; align-items:center; }
   .nav-links a { letter-spacing:2.5px; text-transform:uppercase; color:#ffffffbf; font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:600; text-decoration:none; transition:color .2s; position:relative; padding:.4rem 0; }
   .nav-links a:after { content:""; background:var(--orange); transform-origin:50% 50%; height:2px; width:100%; transition:transform .3s cubic-bezier(.65,0,.35,1); position:absolute; bottom:-2px; left:0; transform:scaleX(0); }
@@ -67,8 +63,6 @@
   .hero-bg { background:var(--black); position:absolute; inset:0; overflow:hidden; }
   .hero-bg:before { content:""; background:repeating-linear-gradient(105deg, #0000, #0000 120px, #f2430008 120px 122px); animation:3s linear infinite speedlines; position:absolute; inset:0; }
   @keyframes speedlines { 0% { transform:translate(-200px); } to { transform:translate(0); } }
-  .hero-photo { position:absolute; inset:0; opacity:.55; }
-  .hero-photo image-slot { width:100%; height:100%; --is-bg:transparent; --is-border:0; --is-radius:0; }
   .hero-video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:.65; z-index:0; pointer-events:none; }
   .hero-grid { background-image:linear-gradient(#f243000f 1px, #0000 1px), linear-gradient(90deg, #f243000f 1px, #0000 1px); background-size:60px 60px; position:absolute; inset:0; mask-image:radial-gradient(#000 0%, #0000 75%); }
   .hero-glow { pointer-events:none; background:radial-gradient(#f243002e 0%, #0000 70%); width:700px; height:300px; position:absolute; bottom:-100px; left:50%; transform:translate(-50%); }
@@ -90,19 +84,7 @@
   .btn-secondary { letter-spacing:2.5px; text-transform:uppercase; color:var(--white); cursor:pointer; background:0 0; border:2px solid #fff6; border-radius:2px; align-items:center; gap:.5rem; padding:.9rem 2.2rem; font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:700; text-decoration:none; transition:all .2s; display:inline-flex; }
   .btn-secondary:hover { border-color:var(--white); transform:translateY(-2px); }
 
-  .hero-badge { z-index:2; opacity:0; backdrop-filter:blur(8px); background:#141414e6; border:1px solid #f2430059; border-radius:4px; align-items:center; gap:.8rem; padding:1rem 1.4rem; animation:.7s .8s forwards fadeUp; display:flex; position:absolute; bottom:6rem; right:3rem; }
-  .badge-stars { color:var(--yellow); letter-spacing:1px; font-size:1rem; }
-  .badge-score { color:var(--white); font-family:'Bebas Neue',sans-serif; font-size:2rem; line-height:1; }
-  .badge-meta { flex-direction:column; display:flex; }
-  .badge-reviews { letter-spacing:1.5px; color:#fff9; text-transform:uppercase; font-family:'Barlow Condensed',sans-serif; font-size:11px; font-weight:600; }
-  .badge-source { color:var(--gray); font-family:Barlow,sans-serif; font-size:11px; }
   @keyframes fadeUp { 0% { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
-
-  /* ============ STRIPS ============ */
-  .strip { background:var(--orange); flex-wrap:wrap; justify-content:center; align-items:center; gap:3rem; padding:.9rem 3rem; display:flex; }
-  .strip-item { letter-spacing:3px; text-transform:uppercase; color:var(--white); align-items:center; gap:.5rem; font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:700; display:flex; }
-  .strip-item:before { content:"●"; opacity:.7; font-size:6px; }
-  .strip-item:first-child:before { display:none; }
 
   /* ============ BANDS ============ */
   .orange-band { background:var(--orange); position:relative; overflow:hidden; padding:0; display:block; }
@@ -177,7 +159,6 @@
   .service-number-badge .line { width:24px; height:2px; background:var(--orange); }
   .service-media-title { position:absolute; bottom:1.1rem; left:1.25rem; right:1.25rem; z-index:2; color:var(--white); font-family:'Bebas Neue',sans-serif; font-size:1.85rem; line-height:1; letter-spacing:2px; text-shadow:0 2px 12px #000c; }
   .service-media-title .accent { color:var(--orange); }
-  .service-media-title.is-placeholder { color:#ffffff80; }
   .service-card-body { padding:1.6rem 1.5rem 1.5rem; display:flex; flex-direction:column; flex:1; gap:1rem; position:relative; overflow:hidden; }
   .service-card-body:before { content:""; position:absolute; inset:0; z-index:0; pointer-events:none; background:#16223f; opacity:.05;
     -webkit-mask:url('assets/m-pattern.png') repeat; mask:url('assets/m-pattern.png') repeat; -webkit-mask-size:260px auto; mask-size:260px auto; }
@@ -186,12 +167,6 @@
   .service-features { display:flex; flex-direction:column; gap:.4rem; margin-top:auto; padding-top:.75rem; border-top:1px dashed #0a246314; }
   .service-feature { color:#0a2463; font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:600; letter-spacing:1px; text-transform:uppercase; display:flex; align-items:center; gap:.55rem; }
   .service-feature:before { content:""; width:14px; height:2px; background:var(--orange); flex-shrink:0; }
-  .service-card.is-placeholder { background:#fbfbfa; border:1px dashed #0a246333; box-shadow:none; }
-  .service-card.is-placeholder:hover { transform:none; border-color:#f2430080; box-shadow:0 8px 24px #0a24631a; }
-  .service-card.is-placeholder .service-media { background:linear-gradient(135deg, #0a246314 0%, #f2430014 100%); }
-  .service-card.is-placeholder .service-media:after { display:none; }
-  .service-placeholder-mark { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.5rem; color:#0a246359; font-family:'Barlow Condensed',sans-serif; font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:700; }
-  .service-placeholder-mark svg { width:32px; height:32px; opacity:.4; }
 
   .services-cta-row { display:flex; flex-direction:column; align-items:center; gap:1.25rem; margin-top:3.5rem; padding-top:2.5rem; border-top:1px solid #0a246314; text-align:center; }
   .services-cta-eyebrow { color:#0a246399; font-family:'Barlow Condensed',sans-serif; font-size:12px; letter-spacing:3px; text-transform:uppercase; font-weight:600; }
@@ -244,8 +219,6 @@
   .team-card:hover .team-avatar img { transform:scale(1.06); }
   .team-avatar--boss { background:#f2430026; border:3px solid var(--orange); width:112px; height:112px; box-shadow:0 0 22px #f2430059; }
   .team-card--boss:hover .team-avatar { transform:scale(1.08); box-shadow:0 10px 32px #f24300a6, 0 0 0 5px #f243002e; }
-  .team-initials { color:#fff; font-family:'Bebas Neue',sans-serif; font-size:1.6rem; }
-  .team-avatar--boss .team-initials { font-size:2.2rem; }
   .team-crown { font-size:1.1rem; position:absolute; top:-14px; left:50%; transform:translate(-50%); }
   .team-name { letter-spacing:1.5px; color:#fff; font-family:'Bebas Neue',sans-serif; font-size:1rem; }
   .team-card--boss .team-name { color:var(--orange); font-family:'Bebas Neue',sans-serif; font-size:1.3rem; letter-spacing:2px; }
@@ -381,8 +354,8 @@
   .footer-contact a:hover { color:var(--orange); }
   .footer-contact svg { width:15px; height:15px; flex-shrink:0; color:var(--orange); }
   .footer-col { display:flex; flex-direction:column; gap:.65rem; }
-  .footer-col h4 { color:#fff; font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; margin-bottom:.7rem; padding-bottom:.7rem; position:relative; }
-  .footer-col h4:after { content:""; position:absolute; left:0; bottom:0; width:28px; height:2px; background:var(--orange); }
+  .footer-col h3 { color:#fff; font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; margin-bottom:.7rem; padding-bottom:.7rem; position:relative; }
+  .footer-col h3:after { content:""; position:absolute; left:0; bottom:0; width:28px; height:2px; background:var(--orange); }
   .footer-col a { color:#ffffff8c; font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:600; letter-spacing:1.3px; text-transform:uppercase; text-decoration:none; transition:color .2s, padding-left .2s; cursor:pointer; }
   .footer-col a:hover { color:var(--orange); padding-left:5px; }
   .footer-bottom { background:var(--black); border-top:1px solid #ffffff0d; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:.5rem; padding:1rem 3rem; display:flex; }
@@ -391,9 +364,6 @@
   .footer-social { gap:1rem; display:flex; }
   .social-link { letter-spacing:2px; text-transform:uppercase; color:#ffffff4d; border:1px solid #ffffff1a; padding:4px 10px; font-family:'Barlow Condensed',sans-serif; font-size:11px; font-weight:600; text-decoration:none; transition:all .2s; }
   .social-link:hover { color:var(--orange); border-color:var(--orange); }
-  .footer-legal { background:var(--black); border-top:1px solid #ffffff0d; display:flex; flex-wrap:wrap; justify-content:center; gap:.5rem 1.6rem; padding:1.1rem 3rem .4rem; }
-  .footer-legal a { color:#ffffff73; font-family:'Barlow Condensed',sans-serif; font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; text-decoration:none; transition:color .2s; cursor:pointer; }
-  .footer-legal a:hover { color:var(--orange); }
 
   /* ============ RESPONSIVE ============ */
 
@@ -421,7 +391,6 @@
     .hero { height:auto; min-height:88vh; padding-top:92px; }
     .hero-content { padding:0 1.5rem; }
     .hero-inner { max-width:none; }
-    .hero-badge { bottom:4rem; right:1.5rem; }
 
     .nosotros-inner { flex-direction:column; gap:2.5rem; }
     .nosotros-right { width:100%; }
@@ -430,7 +399,6 @@
     footer { grid-template-columns:1fr 1fr; gap:2rem 1.5rem; padding:2.5rem 1.5rem; }
     .footer-brand { grid-column:1 / -1; }
     .footer-bottom { padding:1rem 1.5rem; }
-    .strip { gap:1.5rem; padding:.9rem 1.5rem; }
   }
 
   /* ---------- LARGE PHONE ---------- */
@@ -448,7 +416,6 @@
     .hero-subtitle { font-size:1rem; margin-bottom:1.9rem; }
     .hero-buttons { gap:.7rem; }
     .btn-primary, .btn-secondary { padding:.85rem 1rem; font-size:13px; flex:1 1 0; justify-content:center; }
-    .hero-badge { display:none; }
 
     .services-header .section-title br { display:none; }
     .services-count strong { font-size:2.1rem; }
@@ -463,7 +430,6 @@
 
     footer { grid-template-columns:1fr; gap:2rem; }
     .footer-bottom { flex-direction:column; align-items:flex-start; }
-    .footer-legal { gap:.5rem 1.1rem; justify-content:flex-start; padding:1.1rem 1.15rem .3rem; }
   }
 
   /* ---------- SMALL PHONE ---------- */
@@ -762,32 +728,32 @@
       </div>
       <div class="team-grid">
         <div class="team-card">
-          <div class="team-avatar"><img src="assets/team-1-opt.jpg" alt="" /></div>
+          <div class="team-avatar"><img src="assets/team-1-opt.jpg" alt="Víctor, mecánico en Talleres Mateo 2.0" /></div>
           <span class="team-name">Víctor</span>
           <span class="team-role">Mecánico</span>
         </div>
         <div class="team-card">
-          <div class="team-avatar"><img src="assets/team-2-opt.jpg" alt="" /></div>
+          <div class="team-avatar"><img src="assets/team-2-opt.jpg" alt="Camilo, mecánico en Talleres Mateo 2.0" /></div>
           <span class="team-name">Camilo</span>
           <span class="team-role">Mecánico</span>
         </div>
         <div class="team-card">
-          <div class="team-avatar"><img src="assets/team-3-opt.jpg" alt="" /></div>
+          <div class="team-avatar"><img src="assets/team-3-opt.jpg" alt="Mario, mecánico en Talleres Mateo 2.0" /></div>
           <span class="team-name">Mario</span>
           <span class="team-role">Mecánico</span>
         </div>
         <div class="team-card">
-          <div class="team-avatar"><img class="frame-tight" src="assets/team-4-opt.jpg" alt="" /></div>
+          <div class="team-avatar"><img class="frame-tight" src="assets/team-4-opt.jpg" alt="José Antonio, mecánico en Talleres Mateo 2.0" /></div>
           <span class="team-name">José Antonio</span>
           <span class="team-role">Mecánico</span>
         </div>
         <div class="team-card">
-          <div class="team-avatar"><img src="assets/team-5-opt.jpg" alt="" /></div>
+          <div class="team-avatar"><img src="assets/team-5-opt.jpg" alt="Lourdes, administrativa en Talleres Mateo 2.0" /></div>
           <span class="team-name">Lourdes</span>
           <span class="team-role">Administrativa</span>
         </div>
         <div class="team-card">
-          <div class="team-avatar"><img src="assets/team-6-opt.jpg" alt="" /></div>
+          <div class="team-avatar"><img src="assets/team-6-opt.jpg" alt="Jesús, mecánico en Talleres Mateo 2.0" /></div>
           <span class="team-name">Jesús</span>
           <span class="team-role">Mecánico</span>
         </div>
@@ -841,7 +807,7 @@
 <!-- ============ OPINIONES ============ -->
 <section id="opiniones">
   <div class="rev-bg">
-    <img src="assets/grafiti-opt.jpg" alt="" />
+    <img src="assets/grafiti-opt.jpg" alt="Mural pintado de Talleres Mateo 2.0" />
   </div>
   <div class="rev-shell">
     <div class="rev-header">
@@ -1071,7 +1037,7 @@
   </div>
 
   <div class="footer-col">
-    <h4>Legal</h4>
+    <h3>Legal</h3>
     <a href="legal.html#aviso-legal">Aviso Legal</a>
     <a href="legal.html#privacidad">Política de Privacidad</a>
     <a href="legal.html#cookies">Política de Cookies</a>
@@ -1080,7 +1046,7 @@
   </div>
 
   <div class="footer-col">
-    <h4>Explora</h4>
+    <h3>Explora</h3>
     <a href="#servicios">Servicios</a>
     <a href="#nosotros">Nosotros</a>
     <a href="#vehiculos">Vehículos</a>
@@ -1222,15 +1188,6 @@
 </script>
 
 <script src="cookie-consent.js"></script>
-
-<template id="__bundler_thumbnail" data-bg-color="#000000">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#000000"/>
-    <rect y="356" width="1200" height="88" fill="#f24300"/>
-    <text x="600" y="360" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="180" fill="#ffffff" letter-spacing="6">MATEO</text>
-    <text x="600" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="64" fill="#f24300" letter-spacing="14">2.0</text>
-  </svg>
-</template>
 
 <!-- Botón flotante WhatsApp PRO -->
 <a href="https://wa.me/34699911407" target="_blank" rel="noopener" id="wa-fab" aria-label="Escríbenos por WhatsApp">

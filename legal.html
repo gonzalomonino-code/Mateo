@@ -75,9 +75,6 @@
   .lg-data dd { padding:.7rem 1rem; color:var(--ink); font-weight:500; }
   .lg-data dd a { font-weight:600; }
 
-  /* placeholder for data the owner must complete */
-  .ph { background:#fff3cd; color:#7a5b00; border-bottom:1px dotted #c79b14; padding:0 .25rem; border-radius:2px; font-weight:600; }
-
   /* cookie table */
   .lg-table-wrap { overflow-x:auto; margin:1rem 0 1.4rem; border:1px solid var(--line); border-radius:8px; }
   table.lg-table { width:100%; border-collapse:collapse; min-width:560px; font-size:.9rem; }
@@ -93,9 +90,6 @@
             padding:.8rem 1.5rem; border-radius:4px; transition:background .2s, transform .15s; cursor:pointer; border:none; }
   .lg-btn:hover { background:#08204f; transform:translateY(-1px); }
   .lg-btn.orange { background:var(--orange); } .lg-btn.orange:hover { background:var(--orange-dark); }
-
-  .lg-disclaimer { max-width:1100px; margin:0 auto 3rem; padding:0 2rem; }
-  .lg-disclaimer div { background:#fff8e6; border:1px solid #f0d68a; border-radius:8px; padding:1rem 1.2rem; font-size:.85rem; color:#7a5b00; }
 
   /* ---------- FOOTER ---------- */
   footer.lg-foot { background:var(--black); color:#fff; padding:3rem 2rem 1.4rem; }
@@ -120,7 +114,6 @@
     .lg-header { padding:2.6rem 1.1rem 2.4rem; }
     .lg-foot-top { grid-template-columns:1fr; }
     .lg-foot-links { align-items:flex-start; }
-    .lg-disclaimer { padding:0 1.1rem; }
   }
 
   /* ---------- MOBILE FIX: allow grid items to shrink so the cookies
@@ -390,18 +383,6 @@
     document.querySelectorAll('.lg-doc').forEach(function (s) { obs.observe(s); });
   })();
 </script>
-
-<template id="__bundler_thumbnail" data-bg-color="#0b0d12">
-  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#0b0d12"/>
-    <rect x="360" y="250" width="480" height="300" rx="14" fill="#15171c" stroke="#f24300" stroke-width="6"/>
-    <rect x="410" y="320" width="300" height="26" rx="6" fill="#2a2d36"/>
-    <rect x="410" y="370" width="380" height="18" rx="6" fill="#2a2d36"/>
-    <rect x="410" y="404" width="340" height="18" rx="6" fill="#2a2d36"/>
-    <rect x="410" y="438" width="360" height="18" rx="6" fill="#2a2d36"/>
-    <text x="600" y="650" text-anchor="middle" font-family="Arial Black, sans-serif" font-weight="900" font-size="60" fill="#f24300" letter-spacing="6">LEGAL</text>
-  </svg>
-</template>
 
 </body>
 </html>
